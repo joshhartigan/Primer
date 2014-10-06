@@ -99,12 +99,53 @@ void exercise1_11() {
   }
 }
 
+// EXERCISE 1.12:
+//     What does the following `for` loop do? What is the final value of `sum`?
+//
+//         int sum = 0;
+//         for (int i = -100; i <= 100; ++i)
+//             sum += i;
+//
+//     The loop increments `sum` by every number from -100 to 100. Therefore the
+//     final value of `sum` is 0.
+
+// EXERCISE 1.13:
+//     Rewrite exercises 1.9, 1.10, and 1.11 using `for` loops.
+
+void exercise1_13() {
+  // exercise 1.9
+  int sum;
+  for (int i = 50; i < 100; i++) {
+    sum += i;
+  }
+  cout << sum << endl;
+
+  // exercise 1.10
+  for (int i = 10; i >= 0; i--) {
+    cout << i << " ";
+  }
+  cout << endl;
+
+  // exercise 1.11
+  int x, y;
+  cout << "From: ";
+  cin >> x;
+  cout << "To: ";
+  cin >> y;
+  for (int i = x; i < y; i++) {
+    cout << i;
+  }
+  cout << endl;
+}
+
 // -- run exercise functions -- //
 int main() {
   exercise1_3();
   exercise1_4();
   exercise1_9();
   exercise1_10();
+  exercise1_11();
 
   return 0;
 }
+
