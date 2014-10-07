@@ -95,7 +95,7 @@ void exercise1_11() {
   int n = from;
   while (n < to) {
     cout << n << endl;
-    n += 1;
+    ++n;
   }
 }
 
@@ -136,6 +136,34 @@ void exercise1_13() {
     cout << i;
   }
   cout << endl;
+}
+
+// EXERCISE 1.19:
+//     Revise the program from exercise 1.11 so that it can handle input in
+//     which the first number is greater than the second.
+//
+void exercise1_19() {
+  int from, to;
+
+  cout << "I will count from: ";
+  cin >> from;
+
+  cout << "To: ";
+  cin >> to;
+
+  int n = from;
+
+  if (from < to) {
+    while (n < to) {
+      cout << n << endl;
+      ++n;
+    }
+  } else {
+    while (n > to) {
+      cout << n <, endl;
+      --n;
+    }
+  }
 }
 
 // -- run exercise functions -- //
